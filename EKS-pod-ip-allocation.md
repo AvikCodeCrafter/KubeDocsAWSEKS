@@ -35,3 +35,36 @@ For example, an **m5.large** instance supports:
 To check the IPs assigned to Pods:
 ```sh
 kubectl get pods -o wide
+
+### 6. Example: Pod Capacity for m5.xlarge in AWS
+
+## Overview
+The number of pods an **m5.xlarge** EC2 instance can support depends on:
+
+1. **Kubernetes vCPU-Based Pod Limit**
+   - Formula:  
+     ```
+     max_pods = (vCPUs * 2) + 2
+     ```
+   - **m5.xlarge** has **4 vCPUs**, so:  
+     ```
+     (4 * 2) + 2 = 10 pods
+     ```
+   - This is the default limit but can be adjusted in **Amazon EKS**.
+
+2. **AWS ENI & IP-Based Pod Limit**
+   - **m5.xlarge** supports **3 ENIs**.
+   - Each ENI provides **15 IP addresses**.
+   - AWS allows pods per instance as:  
+     ```
+     (ENIs * IPs per ENI) - 1
+     ```
+   - Calculation:  
+     ```
+     (3 * 15) - 1 = 44 pods
+     ```
+   - **The primary instance IP is reserved, reducing the count by 1.**
+
+## Final Pod Limit:
+| Limit Type            | Max Pods |
+|---
