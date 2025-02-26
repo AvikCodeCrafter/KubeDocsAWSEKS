@@ -67,4 +67,15 @@ The number of pods an **m5.xlarge** EC2 instance can support depends on:
 
 ## Final Pod Limit:
 | Limit Type            | Max Pods |
-|---
+|-----------------------|---------|
+| Kubernetes Default    | 10      |
+| AWS ENI-Based Limit   | 44      |
+| **Effective Limit**   | **10 (default) or 44 (custom)** |
+
+> **Note:** The effective limit is **the lower of the two** unless overridden in **Amazon EKS**.
+
+## Custom Configuration
+- To increase the limit beyond 10, adjust the **max pods** setting in **Amazon EKS**.
+- Consider **networking constraints** when increasing pod limits.
+
+---
