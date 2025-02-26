@@ -7,7 +7,7 @@ Welcome to the **AWS EKS Documentation Repository**! This repository contains de
 ## 📖 Contents  
 
 🔹 **[Pod IP Allocation in AWS EKS](EKS-pod-ip-allocation.md)**
-🔹 **[Increasing ENI for Nodes in an EKS Cluster](Increase Eni Eks.md)** 
+🔹 **[Increasing ENI for Nodes in an EKS Cluster](Increase-Eni-Eks.md)** 
 🔹 **Networking in AWS EKS** *(Coming Soon!)*  
 🔹 **EKS Cluster Setup Guide** *(Coming Soon!)*  
 🔹 **Security Best Practices in EKS** *(Coming Soon!)*  
