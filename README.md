@@ -2,7 +2,7 @@
 
 Welcome to the **AWS EKS Documentation Repository**! This repository contains detailed guides, tutorials, and best practices for managing Kubernetes workloads on **Amazon Elastic Kubernetes Service (EKS)**.  
 
-![EKS Architecture](https://d1.awsstatic.com/Containers/EKS-Diagram-V2.ff229eaf334cfb6b93df9da1b205f79216cf6b8a.png)  
+![EKS Architecture](/images/kubernetes-architecture.png)  
 
 ## 📖 Contents  
 
