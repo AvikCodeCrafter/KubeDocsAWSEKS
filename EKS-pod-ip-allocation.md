@@ -35,7 +35,7 @@ For example, an **m5.large** instance supports:
 To check the IPs assigned to Pods:
 ```sh
 kubectl get pods -o wide
-
+```
 ### 6. Example: Pod Capacity for m5.xlarge in AWS
 
 ## Overview
