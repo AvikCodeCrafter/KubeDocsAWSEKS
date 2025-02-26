@@ -1,0 +1,37 @@
+# How Pods Get IP Addresses in AWS EKS
+
+## 1. AWS VPC CNI Plugin (Primary Method)
+AWS EKS uses the **Amazon VPC CNI plugin** to assign **Elastic Network Interfaces (ENIs)** and **IP addresses** from the **Amazon VPC subnet** directly to Pods.
+
+Each **worker node** in the EKS cluster is an **EC2 instance** with one or more **ENIs**.
+
+### 2. IP Allocation Process
+1. **Node Starts & Joins the Cluster**  
+   - When an EKS node (EC2 instance) joins the cluster, the **VPC CNI plugin** requests additional secondary IP addresses from the VPC subnet.
+
+2. **Pod Scheduling**  
+   - When a Pod is scheduled on a node, the **kubelet** requests an IP address from the VPC CNI plugin.
+
+3. **IP Address Assignment**  
+   - The **VPC CNI plugin** assigns a **secondary IP address** from the ENI to the Pod.
+   - The Pod now has an IP address that is **directly routable within the VPC**.
+
+### 3. How Many IPs Can a Node Handle?
+- The **number of Pods per node** depends on:
+  - The **instance type** (e.g., `t3.medium`, `m5.large`).
+  - The **number of ENIs** it supports.
+  - The **number of secondary IPs per ENI**.
+
+For example, an **m5.large** instance supports:
+- **3 ENIs** (1 primary + 2 additional).
+- **10 secondary IPs per ENI**.
+- Maximum **29 Pods** (since 1 IP is used by the node itself).
+
+### 4. Alternative Networking Options
+- **Calico**: Used for network policies with VPC CNI.
+- **Cilium**: Uses eBPF for enhanced networking.
+
+### 5. Viewing Pod IPs in EKS
+To check the IPs assigned to Pods:
+```sh
+kubectl get pods -o wide
