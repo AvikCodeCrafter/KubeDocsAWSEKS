@@ -10,7 +10,7 @@ Welcome to the **AWS EKS Documentation Repository**! This repository contains de
 
 🔹 **[Increasing ENI for Nodes in an EKS Cluster](Increase-Eni-Eks.md)**
 
-🔹 **[Regenerating kubeconfig for a Kubernetes Cluster in AWS EKS](Increase-Eni-Eks.md)** 
+🔹 **[Regenerating kubeconfig for a Kubernetes Cluster in AWS EKS](Regenerate-kubeconfig-EKS.md)** 
 
 🔹 **Networking in AWS EKS** *(Coming Soon!)*  
 🔹 **EKS Cluster Setup Guide** *(Coming Soon!)*  
