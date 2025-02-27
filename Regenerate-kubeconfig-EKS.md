@@ -1,4 +1,4 @@
-# Regenerating kubeconfig for a Kubernetes Cluster if you have lost it or accidentally deleted it
+# Regenerating kubeconfig for a Kubernetes Cluster in AWS EKS
 
 If you've lost your **kubeconfig** file, you can regenerate it using different methods depending on your setup.
 
