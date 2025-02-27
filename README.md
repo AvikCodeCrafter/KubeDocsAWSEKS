@@ -12,7 +12,7 @@ Welcome to the **AWS EKS Documentation Repository**! This repository contains de
 
 🔹 **[Regenerating kubeconfig for a Kubernetes Cluster in AWS EKS](Regenerate-kubeconfig-EKS.md)**
 
-🔹 **[Multiple Clusters in One VPC](Regenerate-kubeconfig-EKS.md)**  Multiple Clusters in One VPC
+🔹 **[Multiple Clusters in One VPC](Multi-Cluster-VPC.md)**
 
 🔹 **Networking in AWS EKS** *(Coming Soon!)*  
 🔹 **EKS Cluster Setup Guide** *(Coming Soon!)*  
