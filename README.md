@@ -14,7 +14,7 @@ Welcome to the **AWS EKS Documentation Repository**! This repository contains de
 
 🔹 **[Multiple Clusters in One VPC](Multi-Cluster-VPC.md)**
 
-🔹 **[Multiple Clusters in One VPC](WS-IAM-Authenticator.md)**
+🔹 **[AWS IAM Authenticator for Kubernetes AWS EKS](WS-IAM-Authenticator.md)**
 
 🔹 **Networking in AWS EKS** *(Coming Soon!)*  
 🔹 **EKS Cluster Setup Guide** *(Coming Soon!)*  
