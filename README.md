@@ -19,7 +19,8 @@ Welcome to the **AWS EKS Documentation Repository**! This repository contains de
 
 🔹 **[AWS IAM Authenticator for Kubernetes AWS EKS](AWS-IAM-Authenticator.md)**
 
-🔹 **[AWS IAM Authenticator for Kubernetes AWS EKS](Gateway-API-in-Kubernetes.md)**
+🔹 **[Gateway API in Kubernetes](Gateway-API-in-Kubernetes.md)**
+
 🔹 **Networking in AWS EKS** *(Coming Soon!)*  
 🔹 **EKS Cluster Setup Guide** *(Coming Soon!)*  
 🔹 **Security Best Practices in EKS** *(Coming Soon!)*  
